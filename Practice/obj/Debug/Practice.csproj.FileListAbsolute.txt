@@ -11,3 +11,16 @@ C:\Users\user\Desktop\Practice\Practice\bin\Debug\Z.Expressions.Eval.xml
 C:\Users\user\Desktop\Practice\Practice\obj\Debug\Practice.csproj.CopyComplete
 C:\Users\user\Desktop\Practice\Practice\obj\Debug\Practice.exe
 C:\Users\user\Desktop\Practice\Practice\obj\Debug\Practice.pdb
+C:\Users\user\Desktop\Summer_Practice_2021\Practice\bin\Debug\Practice.exe.config
+C:\Users\user\Desktop\Summer_Practice_2021\Practice\bin\Debug\Practice.exe
+C:\Users\user\Desktop\Summer_Practice_2021\Practice\bin\Debug\Practice.pdb
+C:\Users\user\Desktop\Summer_Practice_2021\Practice\bin\Debug\Z.Expressions.Eval.dll
+C:\Users\user\Desktop\Summer_Practice_2021\Practice\bin\Debug\Z.Expressions.Eval.xml
+C:\Users\user\Desktop\Summer_Practice_2021\Practice\obj\Debug\Practice.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Summer_Practice_2021\Practice\obj\Debug\Practice.MainForm.resources
+C:\Users\user\Desktop\Summer_Practice_2021\Practice\obj\Debug\Practice.Properties.Resources.resources
+C:\Users\user\Desktop\Summer_Practice_2021\Practice\obj\Debug\Practice.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Summer_Practice_2021\Practice\obj\Debug\Practice.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Summer_Practice_2021\Practice\obj\Debug\Practice.csproj.CopyComplete
+C:\Users\user\Desktop\Summer_Practice_2021\Practice\obj\Debug\Practice.exe
+C:\Users\user\Desktop\Summer_Practice_2021\Practice\obj\Debug\Practice.pdb

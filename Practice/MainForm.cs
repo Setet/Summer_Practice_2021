@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Threading;
 using System.Windows.Forms;
 using Z.Expressions;// библиотека для динамического решения функций
 
@@ -10,10 +11,6 @@ namespace Practice
         public MainForm()
         {
             InitializeComponent();
-        }
-        public static double f(double x)
-        {
-            return Math.Pow(x, 3) - 18 * x - 83;
         }
 
         private double Trapezium_Method(double a, double b, double n, string func)
@@ -26,7 +23,7 @@ namespace Practice
             {
                 xi = a + i * h;
                 xi1 = a + (i + 1) * h;
-                sum += f(xi) + f(xi1);
+                sum += Eval.Execute<double>(func, new { X = xi }) + Eval.Execute<double>(func, new { X = xi1 });
             }
             res = sum * h / 2;
 
@@ -41,7 +38,7 @@ namespace Practice
             do
             {
                 tmp = x_next;
-                x_next = b - f(b) * (a - b) / (f(a) - f(b));
+                x_next = b - Eval.Execute<double>(func, new { X = b }) * (a - b) / (Eval.Execute<double>(func, new { X = a }) - Eval.Execute<double>(func, new { X = b }));
                 a = b;
                 b = tmp;
             } while (Math.Abs(x_next - b) > n);
@@ -66,12 +63,12 @@ namespace Practice
             catch (Exception)// в случае, если вдруг возникнет ошибка
             {
                 rtbFunc.BackColor = Color.Red;// программа даст об этом знать
-                //Refresh();                    // перекрасив область для ввода формулы в красный цвет
+                Refresh();                    // перекрасив область для ввода формулы в красный цвет
 
-                //Thread.Sleep(1000); // и приостановив саму программу на 1 секунду, чтобы изменение цвета области было видно
+                Thread.Sleep(1000); // и приостановив саму программу на 1 секунду, чтобы изменение цвета области было видно
 
-                //rtbTable.BackColor = Color.White;// а после все вернется в норму
-                //Refresh();
+                rtbFunc.BackColor = Color.White;// а после все вернется в норму
+                Refresh();
             }
         }
     }
